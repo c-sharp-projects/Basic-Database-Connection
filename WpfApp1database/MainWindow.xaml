@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1database.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1database"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="Username" HorizontalAlignment="Left" Height="23" Margin="4,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="Password" HorizontalAlignment="Left" Height="23" Margin="3,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="submit" Uid="submit" Content="insert" HorizontalAlignment="Left" Margin="5,175,0,0" VerticalAlignment="Top" Width="75" Click="ActionListener"/>
+        <DataGrid Name="datagridview"  AutoGenerateColumns="True" HorizontalAlignment="Left" Height="270" Margin="124,25,0,0" VerticalAlignment="Top" Width="668"/>
+        <Button x:Name="display" Uid="display" Content="display" HorizontalAlignment="Left" Margin="296,315,0,0" VerticalAlignment="Top" Width="75" Click="ActionListener"/>
+        <Button x:Name="delete" Uid="delete" Content="delete" HorizontalAlignment="Left" Margin="500,315,0,0" VerticalAlignment="Top" Width="75" Click="ActionListener"/>
+
+    </Grid>
+</Window>
